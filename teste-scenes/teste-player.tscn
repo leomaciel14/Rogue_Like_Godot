@@ -1,0 +1,95 @@
+[gd_scene load_steps=4 format=3 uid="uid://moo7opn812k4"]
+
+[ext_resource type="Texture2D" uid="uid://dr62l2373e5m1" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png" id="1_d16fs"]
+[ext_resource type="PackedScene" uid="uid://dshvfdpmm1r8l" path="res://player/player.tscn" id="2_vil2c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rr66n"]
+line_spacing = 99.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AMOSTRA SPRITE" type="Sprite2D" parent="."]
+position = Vector2(1816, 788)
+texture = ExtResource("1_d16fs")
+
+[node name="Label" type="Label" parent="AMOSTRA SPRITE"]
+offset_left = 594.0
+offset_top = -684.0
+offset_right = 634.0
+offset_bottom = -661.0
+text = "idle"
+
+[node name="Label9" type="Label" parent="AMOSTRA SPRITE"]
+offset_left = -499.0
+offset_top = -789.0
+offset_right = 143.0
+offset_bottom = -766.0
+scale = Vector2(1.65268, 1.6)
+text = "0                            1                          2                         3                          4                          5"
+
+[node name="Label10" type="Label" parent="AMOSTRA SPRITE"]
+offset_left = -591.0
+offset_top = -698.0
+offset_right = -570.0
+offset_bottom = 179.0
+scale = Vector2(1.65268, 1.6)
+text = "0 1 2 3 4 5 6 7"
+label_settings = SubResource("LabelSettings_rr66n")
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="AMOSTRA SPRITE"]
+offset_left = 586.0
+offset_top = -501.0
+offset_right = 626.0
+offset_bottom = -478.0
+text = "run"
+
+[node name="Label3" type="Label" parent="AMOSTRA SPRITE"]
+offset_left = 597.0
+offset_top = -306.0
+offset_right = 687.0
+offset_bottom = -283.0
+text = "attack_side_01"
+
+[node name="Label4" type="Label" parent="AMOSTRA SPRITE"]
+offset_left = 596.0
+offset_top = -111.0
+offset_right = 686.0
+offset_bottom = -88.0
+text = "attack_side_02
+"
+
+[node name="Label5" type="Label" parent="AMOSTRA SPRITE"]
+offset_left = 600.0
+offset_top = 82.0
+offset_right = 640.0
+offset_bottom = 105.0
+text = "attack_down_01"
+
+[node name="Label6" type="Label" parent="AMOSTRA SPRITE"]
+offset_left = 583.0
+offset_top = 253.0
+offset_right = 623.0
+offset_bottom = 276.0
+text = "attack_down_02"
+
+[node name="Label7" type="Label" parent="AMOSTRA SPRITE"]
+offset_left = 601.0
+offset_top = 452.0
+offset_right = 714.0
+offset_bottom = 475.0
+text = "attack_up_01"
+
+[node name="Label8" type="Label" parent="AMOSTRA SPRITE"]
+offset_left = 586.0
+offset_top = 655.0
+offset_right = 699.0
+offset_bottom = 678.0
+text = "attack_up_02"
+
+[node name="Player" parent="." instance=ExtResource("2_vil2c")]
+motion_mode = 1
+
+[node name="Player2" parent="." instance=ExtResource("2_vil2c")]
+position = Vector2(455, 220)
+motion_mode = 1
